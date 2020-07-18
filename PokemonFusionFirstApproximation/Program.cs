@@ -8,8 +8,9 @@ namespace PokemonFusionFirstApproximation
         static void Main(string[] args)
         {
 
-            OwnedPokemon testFreak = new OwnedPokemon(dB: new DexPokemon(DatabasePokemon.Mewtwo, DatabasePokemon.DefaultMon), 1);
-            testFreak.
+            OwnedPokemon testFreak = new OwnedPokemon(dB: new DexPokemon(DatabasePokemon.Mewtwo, DatabasePokemon.Omastar), 1);
+            Console.WriteLine(testFreak.getName());
+            Console.WriteLine(testFreak.getType());
             
         }
     }

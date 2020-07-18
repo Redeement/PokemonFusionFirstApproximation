@@ -27,6 +27,7 @@ namespace PokemonFusionFirstApproximation
 
         public DexPokemon(BasePokemon hC) : this(hC, DatabasePokemon.DefaultMon)
         {
+
         }
     }
 }

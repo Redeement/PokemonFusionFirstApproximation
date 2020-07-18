@@ -8,10 +8,5 @@ namespace PokemonFusionFirstApproximation
     {
         public enum PokemonTypes { normal, fire, water, electric, grass, ice, fighting, poison, ground, flying, psychic, bug, rock, ghost, dragon, dark, steel, fairy, typeless };
         public enum physicalSpecial { physical, special };
-
-        public void fusePokemon()
-        {
-            
-        }
     }
 }
