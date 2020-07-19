@@ -19,7 +19,14 @@ namespace PokemonFusionFirstApproximation
 
         public string getName()
         {
-            return dexBase.headComponent.NameFirst + (dexBase.fused ? dexBase.bodyComponent.NameSecond : dexBase.headComponent.NameSecond);
+            string[] cNames = { dexBase.headComponent.Name, dexBase.bodyComponent.Name };
+            string fusionname = "";
+            for (int n = 0; n < cNames.Length - 1; n++)
+            {
+                fusionname += cNames[n].Substring(0, cNames[n].Length / 2);
+            }
+            fusionname += cNames[cNames.Length - 1].Substring(cNames[cNames.Length - 1].Length / 2);
+            return fusionname;
         }
 
         public Tuple<RedLib.PokemonTypes,RedLib.PokemonTypes> getType()

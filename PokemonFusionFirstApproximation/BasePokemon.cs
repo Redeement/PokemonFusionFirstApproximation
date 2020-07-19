@@ -6,8 +6,7 @@ namespace PokemonFusionFirstApproximation
 {
     class BasePokemon
     {
-        public string NameFirst;
-        public string NameSecond;
+        public string Name;
         public Tuple<RedLib.PokemonTypes, RedLib.PokemonTypes> types;
         public byte[] statistics;
         public string[] ability;
@@ -16,15 +15,13 @@ namespace PokemonFusionFirstApproximation
         public BasePokemon(byte[] stats,
                            string[] ab,
                            Dictionary<int, BasePokemonMove> lS,
-                           string nF = "",
-                           string nS = "",
+                           string n = "",
                            RedLib.PokemonTypes tP = RedLib.PokemonTypes.typeless,
                            RedLib.PokemonTypes tS = RedLib.PokemonTypes.typeless
                           )
         {
 
-            NameFirst = nF;
-            NameSecond = nS;
+            Name = n;
             types = new Tuple<RedLib.PokemonTypes, RedLib.PokemonTypes>( tP, tS );
             statistics = stats;
             ability = ab;
